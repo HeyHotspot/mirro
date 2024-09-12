@@ -1,0 +1,228 @@
+$base_color:#3A5F56;
+$second_color:#292C32;
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.btn{
+    color: #fff;
+    background-color: $base_color;
+    border-radius: 6px;
+    padding: 10px 18px;
+}
+.header{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+    }
+    &__link{
+        color: &$base_color;
+        font-size: 16px;
+        &:hover{
+            color:red;
+        }
+    }
+    &__item{
+        margin-right: 30px;
+    }
+    &__cart{
+        display: flex;
+        gap: 8px;
+        &::before{
+            content: "";
+            background: url('../img/cart.svg');
+            display: block;
+            width: 17px;
+            height: 17px;
+        }
+        &::after{
+            content:'0';
+            color: $base_color;
+            background-color:#fff ;
+            padding: 0 6px;
+            border-radius: 50%;
+        }
+    }
+}
+.main{
+    background:url(../img/background\ MIRRo.png)no-repeat center center / cover;
+    padding: 100px 0;
+    &__wrap{
+        display: flex;
+        gap: 64px;
+        align-items: center;
+    }
+    &__title{
+        color: $base_color;
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+}
+.services{
+    padding: 100px 0;
+    &__title{
+        color: $base_color;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+    &__text{
+        color: $second_color;
+        font-size: 16px;
+        max-width: 590px;
+        margin-bottom: 17px;
+        margin: 0 auto;
+        text-align:center;
+    }
+    &_center{
+        text-align: center;
+    }
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    &__card{
+        max-width: 380px;
+        border-radius: 16px;
+        background-color: #f4f3f0;
+        padding: 30px;
+    }
+    &__icon{
+        width: 48px;
+        height: 48px;
+       margin-bottom: 9px;
+    }
+    &__subtitle{
+        color: $base_color;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    &__read{
+        color: $base_color;
+        align-items: center;
+        gap: 5px;
+        &::after{
+            content:' ';
+            background: url(../img/Arrow-Icon-Primary.svg)no-repeat center center / cover;
+            display: block;
+            height: 10px;
+            width: 20px;
+        }
+    }
+}
+.preset__store{
+    background: url(../img/bcgr\ 3.png)no-repeat center center / cover;
+    padding: 100px 0;
+    &__title{
+        color: red;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+    &__info{
+        font-size: 16px;
+        max-width: 590px;
+        margin-bottom: 17px;
+        margin: 0 auto;
+        text-align:center;
+    }
+    &__row{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    }
+    &__card{
+        max-width: 380px;
+        border-radius: 16px;
+        background-color: #fff;
+       padding-bottom: 30px;
+    }
+    &__icon{
+        width: 380px;
+        height: 252px;
+       margin-bottom: 9px;
+    }
+    &__more{
+        text-align:center;
+        margin-left: 545px;
+        &::after{
+            content:' ';
+            background: url(../img/Arrow-Icon-Primary.svg)no-repeat center center / cover;
+            display:block;
+            height: 10px;
+            width: 20px;
+        }
+    }
+    &__subtitle{
+        color: $base_color;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+}
+.contact{
+    &__section{ 
+        align-items: center; 
+        margin: 150px  200px; 
+        width: 800px; 
+        height: 259px; 
+        display: flex; 
+        background-color: #F4F3F0; 
+        border-radius: 16px; 
+        gap: 202px;
+    } 
+    &__text{ 
+        background-color: #F4F3F0; 
+        font-size: 28px; 
+        line-height: 33.6px; 
+        font-family: Roboto; 
+        max-width: 400px; 
+        max-height: 101px; 
+        padding-left: 80px; 
+        padding-bottom: 78px; 
+    } 
+    &__button{ 
+        font-size: 20px; 
+        font-family: Roboto; 
+        color: #FFFFFF; 
+        background-color: #3A5F56; 
+        padding: 15px 25px 15px 25px; 
+    } 
+}
